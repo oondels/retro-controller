@@ -23,6 +23,8 @@ class Controle:
             
             Botao("Select", 10),
             Botao("Start", 9),
+            
+            Botao("Triangulo", 11),
         ]
 
     def iniciar(self):
