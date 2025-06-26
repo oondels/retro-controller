@@ -15,7 +15,8 @@ class Controle:
         self.botoes = [
             Botao("R1", 17),
             Botao("R2", 27),
-Botao("L1", 22),
+            Botao("L1", 22),
+            Botao("L2", 22),
         ]
 
     def iniciar(self):
