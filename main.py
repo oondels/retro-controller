@@ -13,18 +13,10 @@ class Botao:
 class Controle:
     def __init__(self):
         self.botoes = [
-            Botao("R1", 17),
-            Botao("R2", 27),
-            Botao("L1", 22),
-            Botao("L2", 10),
-            Botao("Up", 9),
-            Botao("Left", 11),
-            Botao("Right", 5),
-            Botao("Down", 13),
-            Botao("Triangulo", 14),
-            Botao("Bola", 15),
-            Botao("Triangulo", 18),
-            Botao("Triangulo", 23),
+            Botao("Up", 2),
+            Botao("Left", 3),
+            Botao("Right", 4),
+            Botao("Down", 17),
         ]
 
     def iniciar(self):
