@@ -25,6 +25,9 @@ class Controle:
             Botao("Start", 9),
             
             Botao("Triangulo", 11),
+            Botao("Bola", 5),
+            Botao("Quadrado", 6),
+            Botao("X", 13),
         ]
 
     def iniciar(self):
