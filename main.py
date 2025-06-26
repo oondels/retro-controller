@@ -18,8 +18,11 @@ class Controle:
             Botao("Right", 4),
             Botao("Down", 17),
             
-            Botao("R1", 27),
-            Botao("R2", 22),
+            Botao("R1", 22),
+            Botao("R2", 27),
+            
+            Botao("Select", 10),
+            Botao("Start", 9),
         ]
 
     def iniciar(self):
