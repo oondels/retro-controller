@@ -20,7 +20,11 @@ class Controle:
             Botao("Up", 9),
             Botao("Left", 11),
             Botao("Right", 5),
-            Botao("Down", 6),
+            Botao("Down", 13),
+            Botao("Triangulo", 14),
+            Botao("Bola", 15),
+            Botao("Triangulo", 18),
+            Botao("Triangulo", 23),
         ]
 
     def iniciar(self):
