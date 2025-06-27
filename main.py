@@ -57,6 +57,7 @@ class Botao:
         self.button = Button(gpio_pin)
         # quando apertar, chama on_press
         self.button.when_pressed = self.on_press
+        self.button.when_released  = self.on_release
 
     def on_press(self):
         ev = mapping[self.pin]
