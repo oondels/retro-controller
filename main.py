@@ -28,20 +28,20 @@ time.sleep(0.5)  # garante que o /dev/uinput subiu
 
 # 3) Mapeamento GPIO → evento uinput
 mapping = {
-    2:  uinput.KEY_UP,
-    3:  uinput.KEY_LEFT,
-    4:  uinput.KEY_RIGHT,
-    17: uinput.KEY_DOWN,
-    22: uinput.KEY_Q,        # L1
-    27: uinput.KEY_W,        # L2
-    19: uinput.KEY_E,        # R1
-    26: uinput.KEY_R,        # R2
+    19:  uinput.KEY_UP,
+    13:  uinput.KEY_LEFT,
+    6:  uinput.KEY_RIGHT,
+    5: uinput.KEY_DOWN,
+    11: uinput.KEY_Q,        # L1
+    9: uinput.KEY_W,        # L2
+    7: uinput.KEY_E,        # R1
+    8: uinput.KEY_R,        # R2
     10: uinput.KEY_LEFTSHIFT,# Select
-    9:  uinput.KEY_ENTER,    # Start
-    11: uinput.KEY_A,        # Triângulo
-    5:  uinput.KEY_B,        # Bola
-    6:  uinput.KEY_X,        # Quadrado
-    13: uinput.KEY_Y,        # X
+    26:  uinput.KEY_ENTER,    # Start
+    12: uinput.KEY_A,        # Triângulo
+    20: uinput.KEY_B,        # Bola
+    16: uinput.KEY_X,        # Quadrado
+    21: uinput.KEY_Y,        # X
 }
 
 class Botao:
