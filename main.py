@@ -7,19 +7,22 @@ from signal import pause
 # 1) Liste todos os eventos que seu controle vai usar
 events = [
     uinput.KEY_UP,
-    uinput.KEY_DOWN,
     uinput.KEY_LEFT,
     uinput.KEY_RIGHT,
-    uinput.KEY_LEFTSHIFT,  # exemplo para Select
-    uinput.KEY_ENTER,      # exemplo para Start
-    uinput.KEY_A,          # Triângulo → A
-    uinput.KEY_B,          # Bola       → B
-    uinput.KEY_X,          # Quadrado   → X
-    uinput.KEY_Y,          # X (“retângulo”) → Y
+    uinput.KEY_DOWN,
+    
     uinput.KEY_Q,          # L1
-    uinput.KEY_W,          # L2
     uinput.KEY_E,          # R1
-    uinput.KEY_R,          # R2
+    uinput.KEY_Z,          # L2
+    uinput.KEY_C,          # R2
+    
+    uinput.KEY_ENTER,       # Start KEY_RIGHTSHIFT
+    uinput.KEY_RIGHTSHIFT,  # Select
+    
+    uinput.KEY_H,        # X
+    uinput.KEY_G,        # Bola
+    uinput.KEY_T,        # Triangulo
+    uinput.KEY_F,        # Quadrado
 ]
 
 # 2) Cria o dispositivo virtual
@@ -32,16 +35,19 @@ mapping = {
     13:  uinput.KEY_LEFT,
     6:  uinput.KEY_RIGHT,
     5: uinput.KEY_DOWN,
-    11: uinput.KEY_Q,        # L1
-    9: uinput.KEY_W,        # L2
-    7: uinput.KEY_E,        # R1
-    8: uinput.KEY_R,        # R2
-    10: uinput.KEY_LEFTSHIFT,# Select
-    26:  uinput.KEY_ENTER,    # Start
-    12: uinput.KEY_A,        # Triângulo
-    20: uinput.KEY_B,        # Bola
-    16: uinput.KEY_X,        # Quadrado
-    21: uinput.KEY_Y,        # X
+    
+    9: uinput.KEY_Q,        # L1
+    8: uinput.KEY_E,        # R1
+    11: uinput.KEY_Z,        # L2
+    7: uinput.KEY_C,        # R2
+    
+    26: uinput.KEY_ENTER,    # Start
+    10: uinput.KEY_RIGHTSHIFT,# Select
+    
+    20: uinput.KEY_H,        # X
+    21: uinput.KEY_G,        # Bola
+    12: uinput.KEY_T,        # Triangulo
+    16: uinput.KEY_F,        # Quadrado
 }
 
 class Botao:
@@ -69,18 +75,18 @@ class Controle:
             Botao("Right", 6),
             Botao("Down", 5),
             
-            Botao("L1", 11),
-            Botao("L2", 9),
-            Botao("R1", 7),
-            Botao("R2", 8),
+            Botao("L1", 9),
+            Botao("L2", 11),
+            Botao("R1", 8),
+            Botao("R2", 7),
             
-            Botao("Select", 10),
             Botao("Start", 26),
+            Botao("Select", 10),
             
+            Botao("X", 20),
+            Botao("Bola", 21),
             Botao("Triangulo", 12),
-            Botao("Bola", 20),
             Botao("Quadrado", 16),
-            Botao("X", 21),
         ]
 
     def iniciar(self):
