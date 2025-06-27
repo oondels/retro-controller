@@ -61,10 +61,14 @@ class Botao:
     def on_press(self):
         ev = mapping[self.pin]
         # Press + Release
-        device.emit(ev, 1)  
+        device.emit(ev, 1)
+    
+    def on_release(self):
+        ev = mapping[self.pin]
+        # Press + Release
         device.emit(ev, 0)
-        # (opcional) log no console
         print(f"[{self.nome}] → {ev}")
+        
 
 class Controle:
     def __init__(self):
