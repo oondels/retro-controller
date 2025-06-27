@@ -64,20 +64,23 @@ class Controle:
     def __init__(self):
         # crie um Botao para cada entrada
         self.botoes = [
-            Botao("Up", 2),
-            Botao("Left", 3),
-            Botao("Right", 4),
-            Botao("Down", 17),
-            Botao("L1", 22),
-            Botao("L2", 27),
-            Botao("R1", 19),
-            Botao("R2", 26),
+            Botao("Up", 19),
+            Botao("Left", 13),
+            Botao("Right", 6),
+            Botao("Down", 5),
+            
+            Botao("L1", 11),
+            Botao("L2", 9),
+            Botao("R1", 7),
+            Botao("R2", 8),
+            
             Botao("Select", 10),
-            Botao("Start", 9),
-            Botao("Triangulo", 11),
-            Botao("Bola", 5),
-            Botao("Quadrado", 6),
-            Botao("X", 13),
+            Botao("Start", 26),
+            
+            Botao("Triangulo", 12),
+            Botao("Bola", 20),
+            Botao("Quadrado", 16),
+            Botao("X", 21),
         ]
 
     def iniciar(self):
